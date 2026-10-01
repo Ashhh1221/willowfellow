@@ -87,3 +87,25 @@ button{touch-action:manipulation}
  .agenda-head h2{font-size:20px}
 }
 .color-option input[type=radio]{width:18px;height:18px;min-height:0;max-width:none;padding:0;flex-shrink:0}
+
+.month-controls{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 24px}
+.monthly-heading{padding-bottom:14px;border-bottom:1px solid #17191e25}
+.calendar-event{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;flex-shrink:0}
+.plan-time{display:block;font-weight:400;margin-top:2px}
+.health-view .actions, #water-custom-form .actions,#water-goal-form .actions{margin-top:12px}
+#water-custom-form,#water-goal-form{margin-top:20px}
+@media(max-width:720px){
+ nav{grid-template-columns:repeat(5,minmax(0,1fr))}
+ nav button{font-size:12px;min-height:51px}
+ .month-controls button{flex:1;min-height:44px}
+ .calendar-day{min-height:90px}
+ .calendar-event{line-height:1.35;padding:3px 2px}
+ #water-custom-form .actions button,#water-goal-form .actions button,#health-diary-form .actions button{width:100%}
+ #health-diary-form .actions{margin-top:14px}
+}
+.expense-period{border:1px solid #17191e40;border-radius:8px;margin:22px 0 8px;padding:12px 14px}
+.expense-period legend{font-size:14px;font-weight:600;padding:0 5px}
+.date-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+.date-pair label{grid-row:1;margin:0}
+.date-pair input{grid-row:2}
+@media(max-width:420px){.date-pair{display:block}.date-pair label{margin:12px 0 7px}.expense-period{padding:10px}}

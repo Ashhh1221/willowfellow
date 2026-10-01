@@ -68,3 +68,23 @@ Pocket caches only its application files. Your personal information remains in I
 After changing any app file, increase VERSION in service-worker.js (for example, v1 to v2) and upload the changed files. Open Pocket online to download the update. Once Settings reports an update ready, close all Pocket tabs and installed app windows, then reopen. Updates replace the application cache without deleting IndexedDB records.
 
 Additional PWA files: manifest.json, service-worker.js, pwa.js, icons/icon-192.png, icons/icon-512.png, icons/icon-maskable-512.png, and icons/apple-touch-icon.png. Offline readiness and installation behavior still need verification in an actual phone browser.
+
+## Monthly lists and Health
+
+Expenses shows the current month's income, spending, balance, and transactions. Select any month, or use Previous/Next/This month, to view its transactions. CSV exports follow the selected month.
+
+To-do and Checklists open on unfinished items. Checking an item moves it into Completed, where you can uncheck it to bring it back. Completed checklists disappear from the To do view. Nothing is permanently deleted by completion. JPG and email exports follow the current completion view.
+
+Each checklist belongs to a month. Existing checklists are assigned to the month of their last saved date (or this month when no date exists). Use the month selector to view old lists. Copy to month opens an editable copy for the next month with all boxes unchecked; choose another month in the editor if needed. The original stays intact.
+
+All plan titles appear directly on their calendar dates, with times beneath them. Tap a date for the full editable agenda.
+
+Health tracks water, sleep hours, mood, a daily note, and optional habits. Set your own daily water goal in ml; it is a personal tracking target, not a medical recommendation. Add 250 ml, 500 ml, or a custom amount, and remove mistaken entries. Each date has a separate log and the page shows water remaining toward your goal. Earlier logs remain available through the date selector and recent history. Health logs and monthly checklist data are included in backups. Old Pocket backups still import.
+
+This release uses offline-cache version v2. After uploading every changed file, open online, then close all Pocket tabs/app windows and reopen when the update is ready. Browser data remains local.
+
+## Optional expense coverage dates
+
+The expense/income editor has optional From date and To date fields under Covered period. Leave both blank for a normal transaction, enter one date for an open-ended period, or enter both for a complete period. To date cannot precede From date. Coverage dates appear below the transaction and are included in CSV exports and backups.
+
+The required transaction Date determines the accounting month. Coverage dates do not spread the amount over multiple months or duplicate the transaction. This release uses offline-cache version v3.

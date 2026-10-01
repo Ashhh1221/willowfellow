@@ -1,6 +1,6 @@
 'use strict';
 // Change this version whenever any cached application file changes.
-const VERSION = 'v1';
+const VERSION = 'v3';
 const PREFIX = 'pocket-shell-' + encodeURIComponent(self.registration.scope) + '-';
 const CACHE = PREFIX + VERSION;
 const APP_FILES = ['index.html', 'style.css', 'app.js', 'pwa.js', 'manifest.json', 'favicon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png'];
